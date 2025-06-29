@@ -58,7 +58,7 @@ El procesamiento fue realizado en Python. Se utilizó el “pkl” y se extrajer
 **Tamaño de ventana:** 60 segundos (ventanas de 42000 muestras).
 
 
-**Desplazamiento (sliding window):** 0.25 de segundos (ventanas de 175 muestras). 
+**Desplazamiento (window shift):** 0.25 de segundos (ventanas de 175 muestras). 
 
 
 
