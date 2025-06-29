@@ -13,7 +13,7 @@ El conjunto de datos contiene datos fisiológicos obtenidos de 15 sujetos (17 or
 
 Donde X es el número de paciente, cada paciente posee los siguientes archivos:
 SX_readme.txt: Contiene información del paciente X, información sobre la recolección de los datos y su calidad. Por ejemplo, en un paciente puede aclararse que el sensor Empatica E4 estuvo mal colocado durante el estudio por lo que sus señales no serían válidas (como fue el caso de los pacientes 1 y 12). 
-**SX_respiban.txt:** Datos crudos del RespiBAN.
+**SX_respiban.txt:** Datos crudos del RespiBAN. /br
 **SX_E4_Data.zip:** Datos crudos del Empatica E4.
 **SX.pkl:** Datos sincronizados con etiquetas de condición.
 **SX_quest.csv:** Datos de protocolos y cuestionarios, estos son un autoinforme completado por cada paciente. Estas incluyen 3 encuestas: SSSQ, STAI y PANAS, cada una con sus respectivas variables. 
