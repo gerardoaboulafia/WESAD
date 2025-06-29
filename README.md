@@ -65,14 +65,52 @@ El procesamiento fue realizado en Python. Se utilizó el “pkl” y se extrajer
 En este proyecto se busca poder distinguir particularmente el estado de estrés, por lo que se  utilizó únicamente el label 1 y  label 2, es decir baseline y stress respectivamente. 
 
 ## Modelo Aplicado
-TERMINAR
-
 ### Validación Leave-One-Subject-Out
 Para evaluar la capacidad de generalización del modelo a nuevos individuos, se utilizó el método de validación cruzada Leave-One-Subject-Out (LOSO). Este enfoque consiste en:
 
 Entrenar el modelo dejando completamente afuera un sujeto (paciente) en cada iteración.  
 Evaluar el rendimiento del modelo sobre el sujeto excluido.  
-Repetir el procedimiento para todos los sujetos del conjunto de datos.  
+Repetir el procedimiento para todos los sujetos del conjunto de datos.
+Para la etapa de **modelado** se evaluaron dos clasificadores supervisados bajo el mismo esquema de validación **Leave-One-Subject-Out (LOSO)**: primero un **Random Forest** como línea base y luego un **XGBoost** para contrastar desempeño.
+
+### 1. Random Forest Classifier
+
+|          | pred_0 | pred_1 |
+|----------|--------|--------|
+| **real_0** | 49 634 | 16 119 |
+| **real_1** | 12 266 | 24 918 |
+
+- **Accuracy LOSO media:** **0.725 ± 0.221**
+
+El Random Forest confirmó la **viabilidad del proyecto**, alcanzando un 72 % de acierto global. Sin embargo, la desviación estándar relativamente alta (± 0.221) indica **gran variabilidad entre sujetos**: en algunos pacientes el modelo rinde muy bien, en otros no tanto.
+
+---
+
+### 2. XGBoost Classifier
+
+|          | pred_0 | pred_1 |
+|----------|--------|--------|
+| **real_0** | 50 200 | 15 553 |
+| **real_1** | 12 721 | 24 463 |
+
+- **Accuracy LOSO media:** **0.725 ± 0.207**
+
+Se entrenó un modelo **XGBoost** (200 árboles, `learning_rate=0.1`, `max_depth=6`) con los mismos pliegues LOSO.  
+Aunque la media de *accuracy* **es prácticamente idéntica** a la del Random Forest, la **dispersión entre pacientes es menor** (± 0.207), lo que sugiere un rendimiento más estable cuando el modelo se aplica a individuos no vistos.
+
+---
+
+### Selección del modelo
+
+En un escenario de negocio donde el producto debe **funcionar con pacientes que no formaron parte del entrenamiento**, la **consistencia** es tan crítica como la precisión media.  
+Por ello se **elige el modelo de XGBoost**:
+
+- Ofrece la **misma tasa de acierto global** que el Random Forest.  
+- Presenta **menor variabilidad entre sujetos**, reduciendo el riesgo de fallos graves en casos individuales.  
+- Permite ajustes finos de regularización y *shrinkage* que facilitan la **interpretación de importancia de variables** para futuras mejoras.
+
+En síntesis, XGBoost proporciona un **compromiso equilibrado** entre desempeño y robustez, adecuado para la implementación en dispositivos de monitoreo del estrés en usuarios finales.
+  
 
 ## Créditos y referencias
 Dataset creado por Philip Schmidt et al. (2018)  
