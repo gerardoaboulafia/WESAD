@@ -3,7 +3,7 @@ Los datos seleccionados para el entrenamiento y armado del modelo fueron únicam
 Esta elección también se fundamenta en que, al revisar los archivos README individuales de los participantes del dataset WESAD, se identificaron fallas recurrentes en los sensores de muñeca (como colocación incorrecta o mal funcionamiento), lo que podría comprometer la calidad y consistencia de los datos.
 
 # Definición de sliding window para la segmentación de los datos.
-
+hola
 
 
 # Decisión de trabajar con dos estados de ánimo
