@@ -114,7 +114,7 @@ En síntesis, XGBoost proporciona un **compromiso equilibrado** entre desempeño
 
 ## Créditos y referencias
 Dataset creado por Philip Schmidt et al. (2018)  
-Referencia: [WESAD: A Multimodal Dataset for Wearable Stress and Affect]
+Referencia: [WESAD: A Multimodal Dataset for Wearable Stress and Affect] https://ubi29.informatik.uni-siegen.de/usi/pdf/ubi_icmi2018.pdf
 
 S. Kreibig. 2010. Autonomic nervous system activity in emotion: A review. Biological Psychology
 
