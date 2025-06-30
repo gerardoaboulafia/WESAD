@@ -116,5 +116,27 @@ En síntesis, XGBoost proporciona un **compromiso equilibrado** entre desempeño
 Dataset creado por Philip Schmidt et al. (2018)  
 Referencia: [WESAD: A Multimodal Dataset for Wearable Stress and Affect]
 
-https://machinelearningmastery.com/loocv-for-evaluating-machine-learning-algorithms/#:~:text=fold%20Cross%2DValidation-,Leave%2Done%2Dout%20cross%2Dvalidation%2C%20or%20LOOCV%2C,or%20costly%20models%20to%20fit. 
+S. Kreibig. 2010. Autonomic nervous system activity in emotion: A review. Biological Psychology
 
+Smith, P. T. (2015). Emotion and the ultimate answer to the meaning of life. In P. T. Smith (Ed.), Theories of Emotion (pp. 161–173). Oxford University Press. https://academic.oup.com/book/1700/chapter-abstract/141285934
+
+Nair, S. J., Balachandran, N., & Bindu, K. R. (2022). A comparative study on emotion recognition using physiological signals. Biomedical Engineering Online, 21(1), 1–24. https://biomedical-engineering-online.biomedcentral.com/articles/10.1186/s12938-023-01075-1
+
+
+Lim, H. M., Lee, S. H., & Park, Y. R. (2022). A stress monitoring system based on electrodermal activity using wearable devices: A systematic review. Frontiers in Public Health, 10, 873114. https://pubmed.ncbi.nlm.nih.gov/35755979/
+
+
+Liu, W., Wu, R., & Zhang, Y. (2022). Electrodermal activity and mental health: A study on depression and stress. Psychiatry Investigation, 19(7), 567–576. https://pmc.ncbi.nlm.nih.gov/articles/PMC9215837/
+
+Gambera, M. (2022, March 5). How to extract features from signals. Medium. https://matteogambera.medium.com/how-to-extract-features-from-signals-15e7db225c15
+
+
+Anónimo. (n.d.). What is window overlapping in digital signal processing and why do we use it? Quora. https://www.quora.com/What-is-window-overlapping-in-digital-signal-processing-and-why-do-we-use-it-1
+
+Sheehan, B. (n.d.). WESAD experiments [Python script]. GitHub. https://github.com/BradySheehan/wesad_experiments/blob/master/src/main/DataManager.py
+
+Shanmugam, J. (n.d.). Stress affect detection prototype [Jupyter Notebook]. GitHub. https://github.com/jagan-shanmugam/stress_affect_detection/blob/master/prototype.ipynb
+
+UTDallas ECS. (2020, June 2). Overlapping windowing techniques in signal processing [Video]. YouTube. https://www.youtube.com/watch?v=634OAjlCQQg
+
+Brownlee, J. (2020, April 22). LOOCV for evaluating machine learning algorithms. Machine Learning Mastery. https://machinelearningmastery.com/loocv-for-evaluating-machine-learning-algorithms/
