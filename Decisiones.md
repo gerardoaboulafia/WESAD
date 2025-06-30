@@ -3,8 +3,8 @@ Los datos seleccionados para el entrenamiento y armado del modelo fueron únicam
 Esta elección también se fundamenta en que, al revisar los archivos README individuales de los participantes del dataset WESAD, se identificaron fallas recurrentes en los sensores de muñeca (como colocación incorrecta o mal funcionamiento), lo que podría comprometer la calidad y consistencia de los datos.
 
 # Definición de sliding window para la segmentación de los datos.
-
-
+Se decidió trabajar con un sliding window de 60 segundos, la cual contiene un total de 42000 muestras por ventana (ya que la frecuencia de muestreo es de 700 HZ)  con un window shift de ¼ de segundo (la ventana se va desplazando cada 175 observaciones). Esta decisión se debe a que al utilizar ventanas que abarquen una gran cantidad de observaciones de la señal, es posible obtener features estables y representativas de variables tanto cardiovasculares como respiratorias.
+Kreibig (2010) describe que las respuestas a las diferentes emociones pueden ser mejor capturadas al analizar amplios segmentos de la señal, precisamente la medida estándar utilizada es de 60 segundos. 
 
 # Decisión de trabajar con dos estados de ánimo
 La selección de únicamente dos clases (baseline y estrés) responde a una necesidad de negocio: el cliente requiere saber con precisión cuándo un paciente se encuentra estresado. En ese contexto, incorporar otras emociones (por ejemplo, felicidad o diversión) habría añadido complejidad sin aportar valor directo al objetivo del proyecto. 
