@@ -106,7 +106,7 @@ En un escenario de negocio donde el producto debe **funcionar con pacientes que 
 Por ello se **elige el modelo de XGBoost**:
 
 - Supera la media global obtenida en el Random Forest (72.5% contra 73.1%).  
-- Muestra una menor tasa de errores tipo II, identificando mejor los casos reales de clase 1. 
+- Reduce tanto los errores tipo I como tipo II.
 - Permite ajustes finos de regularización y *shrinkage* que facilitan la **interpretación de importancia de variables** para futuras mejoras.
 
 En síntesis, XGBoost proporciona un **compromiso equilibrado** entre desempeño y robustez, adecuado para la implementación en dispositivos de monitoreo del estrés en usuarios finales.
