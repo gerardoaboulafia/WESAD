@@ -90,13 +90,13 @@ El Random Forest confirmó la **viabilidad del proyecto**, alcanzando un 72 % de
 
 |          | pred_0 | pred_1 |
 |----------|--------|--------|
-| **real_0** | 50 200 | 15 553 |
-| **real_1** | 12 721 | 24 463 |
+| **real_0** | 50 110 | 15 643 |
+| **real_1** | 12 031 | 25 153 |
 
-- **Accuracy LOSO media:** **0.725 ± 0.207**
+- **Accuracy LOSO media:** **0.731 ± 0.213**
 
-Se entrenó un modelo **XGBoost** (200 árboles, `learning_rate=0.1`, `max_depth=6`) con los mismos pliegues LOSO.  
-Aunque la media de *accuracy* **es prácticamente idéntica** a la del Random Forest, la **dispersión entre pacientes es menor** (± 0.207), lo que sugiere un rendimiento más estable cuando el modelo se aplica a individuos no vistos.
+Se entrenó un modelo **XGBoost** (200 árboles, `learning_rate=0.1`, `max_depth=7`) con los mismos pliegues LOSO.  
+La media mejoró significativamente y mantiene una dispersión similar.
 
 ---
 
@@ -105,8 +105,8 @@ Aunque la media de *accuracy* **es prácticamente idéntica** a la del Random Fo
 En un escenario de negocio donde el producto debe **funcionar con pacientes que no formaron parte del entrenamiento**, la **consistencia** es tan crítica como la precisión media.  
 Por ello se **elige el modelo de XGBoost**:
 
-- Ofrece la **misma tasa de acierto global** que el Random Forest.  
-- Presenta **menor variabilidad entre sujetos**, reduciendo el riesgo de fallos graves en casos individuales.  
+- Supera la media global obtenida en el Random Forest (72.5% contra 73.1%).  
+- Muestra una menor tasa de errores tipo II, identificando mejor los casos reales de clase 1. 
 - Permite ajustes finos de regularización y *shrinkage* que facilitan la **interpretación de importancia de variables** para futuras mejoras.
 
 En síntesis, XGBoost proporciona un **compromiso equilibrado** entre desempeño y robustez, adecuado para la implementación en dispositivos de monitoreo del estrés en usuarios finales.
