@@ -2,7 +2,7 @@
 Este repositorio contiene toda la información relacionada al proyecto de detección de estrés, que se llevó a cabo con los datos de WESAD.
 
 Este proyecto tiene como objetivo analizar datos fisiológicos multicanal provenientes del dataset WESAD (Wearable Stress and Affect Detection) con el fin de desarrollar modelos de detección de estrés utilizando señales de sensores portables. 
-El objetivo principal es distinguir entre personas en estado de estrés y no estrés, mediante el entrenamiento de modelos que puedan clasificar estos estados de manera confiable. Este desarrollo se proyecta como una solución potencialmente aplicable en el contexto de dispositivos inteligentes, orientada a empresas que diseñan sensores portátiles enfocados en el monitoreo del bienestar y la salud mental.
+El objetivo principal es distinguir entre personas en estado de estrés y no estrés, mediante el entrenamiento de modelos que puedan clasificar estos estados de manera confiable. Este desarrollo se proyecta como una solución potencialmente aplicable en el contexto de instituciones médicas, para observar como responden los pacientes a distintos estímulos. 
 
 ## Dataset: WESAD
 El conjunto de datos contiene datos fisiológicos obtenidos de 15 sujetos (17 originales menos 2 descartados) durante diferentes condiciones emocionales (baseline, estrés, diversión, meditación). Las señales fueron registradas mediante dos dispositivos:
